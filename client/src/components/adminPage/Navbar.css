@@ -1,0 +1,147 @@
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+.myNav {
+  /* width: 259px;
+  height: 911px; */
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(19, 27, 55);
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  position: fixed;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+}
+.menu {
+  color: white;
+}
+
+.dropdown-header {
+  margin-top: 30px;
+  color: rgb(108, 117, 103);
+  margin-left: 20px;
+}
+
+/* -------------------------------- */
+
+.subject {
+  /* background-color: lightblue; */
+  max-width: 200px;
+  margin: 5px 10px 5px 10px;
+  gap: 10px;
+}
+
+.menu {
+  /* background-color: #333; */
+  color: white;
+  margin-left: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all ease 0.2s;
+}
+
+/* .menu ul li:hover {
+  background-color: rgb(55, 72, 122);
+  cursor: pointer;
+} */
+.subject:hover {
+  background-color: rgb(55, 72, 122);
+  cursor: pointer;
+}
+
+.subject.active{
+  background-color: rgb(55, 72, 122);
+}
+
+.dropdown-header {
+  font-weight: bold;
+}
+
+.subject {
+  display: flex;
+  align-items: center;
+}
+
+.submenu-header1,
+.submenu-header2 {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px;
+  transition: all ease 0.2s;
+}
+
+.submenu-header1:hover,
+.submenu-header2:hover {
+  background-color: rgb(55, 72, 122);
+}
+
+.submenu-header1.active,
+.submenu-header2.active {
+  background-color: rgb(55, 72, 122);
+}
+
+.submenu1,
+.submenu2 {
+  display: none;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+
+.submenu1.active,
+.submenu2.active {
+  background-color: rgb(22, 32, 63);
+  display: block;
+  max-height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.submenu-list:hover {
+  background-color: rgb(38, 51, 91);
+}
+
+.submenu-list {
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.submenu-list:hover {
+  background-color: rgb(38, 51, 91);
+}
+
+.submenu-list.active {
+  background-color: rgb(55, 72, 122);
+}

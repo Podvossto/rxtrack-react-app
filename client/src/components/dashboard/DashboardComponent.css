@@ -1,0 +1,32 @@
+.PreviewBox {
+  width: 360px;
+  height: 105px;
+  /* height: 1050px; */
+  border-radius: 10px;
+  border: 1px solid #e8ebed;
+  display: flex;
+  
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+
+.tableBox {
+  width: 1515px;
+  height: 308px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.column-header th {
+  background-color: rgb(250, 251, 254);
+}
+
+.theTbody tr td,.theTbody tr th{
+  color: gray;
+}
